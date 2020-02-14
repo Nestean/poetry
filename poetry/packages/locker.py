@@ -4,6 +4,7 @@ import re
 from hashlib import sha256
 from typing import List
 
+from poetry_core.version.markers import parse_marker
 from tomlkit import document
 from tomlkit import inline_table
 from tomlkit import item
@@ -15,7 +16,6 @@ import poetry.repositories
 
 from poetry.utils._compat import Path
 from poetry.utils.toml_file import TomlFile
-from poetry.version.markers import parse_marker
 
 
 class Locker(object):

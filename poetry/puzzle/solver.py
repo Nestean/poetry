@@ -4,12 +4,13 @@ from typing import Any
 from typing import Dict
 from typing import List
 
+from poetry_core.packages import Package
+from poetry_core.semver import parse_constraint
+from poetry_core.version.markers import AnyMarker
+
 from poetry.mixology import resolve_version
 from poetry.mixology.failure import SolveFailure
 from poetry.packages import DependencyPackage
-from poetry.packages import Package
-from poetry.semver import parse_constraint
-from poetry.version.markers import AnyMarker
 
 from .exceptions import CompatibilityError
 from .exceptions import SolverProblemError

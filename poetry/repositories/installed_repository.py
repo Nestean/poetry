@@ -1,4 +1,5 @@
-from poetry.packages import Package
+from poetry_core.packages import Package
+
 from poetry.utils._compat import Path
 from poetry.utils._compat import metadata
 from poetry.utils.env import Env
